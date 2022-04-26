@@ -3,7 +3,9 @@ package amin;
 import java.util.Scanner;
 
 public class Mainnn {
-	//ceci est  un commentaire
+	/**
+	 * author Ahmad Houmad
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		//Saisir de l'Etudiant
@@ -22,16 +24,24 @@ public class Mainnn {
 		Etudiant et = new Etudiant(idEt,nomEt,prenomEt,adresseEt,emailEt);
 		
 		//Saisir de Matiere"
-		System.out.println("Saisir la Matiere");
-		System.out.println("Saisir id de matiere");
-		int idMa = sc.nextInt();
-		System.out.println("Saisir nom de matiere");
-		String nomMa = sc.next();
-		System.out.println("Saisir nom de coefficient");
-		String coefficientMa = sc.next();
-		Matiere ma = new Matiere(idMa,nomMa,coefficientMa);
-		
-		
+		  public void SaisirMatiere() {
+		        Saisie saisie = new Saisie();
+
+		        System.out.println("\nVeuillez saisir le matiere ");
+		        int matiere = saisie.getSaisieInt();
+		        System.out.println("La matiere est : " + matiere);
+		        
+		        System.out.println("Veuillez saisir l id du matiere ");
+		        int id = saisie.getSaisieInt();
+		        System.out.println("Le id du matiere est: " + id);
+
+		        
+		        System.out.println("Veuillez saisir le coeficient du matiere ");
+		        int coef = saisie.getSaisieInt();
+		        System.out.println("Le coeficient du matiere vaut : " + coef);
+
+		        
+		  }
 		//creation de la matiere et etudiant
 		MatEtudiant me = new MatEtudiant(ma,et);
 		
@@ -75,4 +85,5 @@ public class Mainnn {
 
 	}
 
+	
 }
