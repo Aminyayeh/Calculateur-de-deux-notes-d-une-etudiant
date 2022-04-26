@@ -1,19 +1,19 @@
 package amin;
 
 public class Note {
-	public Matiere Id_matière ;
-	public float Moyen_Semestre1;
-	public float Moyen_Semestre2 ;
-	public float Resultat_Annee ;
-	public String admin ;
+	private Matiere Id_matière ;
+	private float note1;
+	private float note2 ;
+	private float moyen ;
+	private String admis ;
 	
 	public Note(Matiere id_matière, float moyen_Semestre1, float moyen_Semestre2, float resultat_Année, String admin) {
 		
 		Id_matière = id_matière;
-		Moyen_Semestre1 = moyen_Semestre1;
-		Moyen_Semestre2 = moyen_Semestre2;
-		Resultat_Annee = resultat_Année;
-		this.admin = admin;
+		note1 = moyen_Semestre1;
+		note2 = moyen_Semestre2;
+		moyen = resultat_Année;
+		this.admis = admin;
 	}
 	
 	public Note() {
@@ -28,36 +28,36 @@ public class Note {
 		Id_matière = id_matière;
 	}
 
-	public float getMoyen_Semestre1() {
-		return Moyen_Semestre1;
+	public float getNote1() {
+		return note1;
 	}
 
-	public void setMoyen_Semestre1(float moyen_Semestre1) {
-		Moyen_Semestre1 = moyen_Semestre1;
+	public void setNote1(float moyen_Semestre1) {
+		note1 = moyen_Semestre1;
 	}
 
-	public float getMoyen_Semestre2() {
-		return Moyen_Semestre2;
+	public float getNote2() {
+		return note2;
 	}
 
-	public void setMoyen_Semestre2(float moyen_Semestre2) {
-		Moyen_Semestre2 = moyen_Semestre2;
+	public void setNote2(float moyen_Semestre2) {
+		note2 = moyen_Semestre2;
 	}
 
 	public float getResultat_Annee() {
-		return Resultat_Annee;
+		return moyen;
 	}
 
 	public void setResultat_Annee(float resultat_Annee) {
-		Resultat_Annee = resultat_Annee;
+		moyen = resultat_Annee;
 	}
 
-	public String getAdmin() {
-		return admin;
+	public String getAdmis() {
+		return admis;
 	}
 
-	public void setAdmin(String admin) {
-		this.admin = admin;
+	public void setAdmis(String admin) {
+		this.admis = admin;
 	}
 
 	

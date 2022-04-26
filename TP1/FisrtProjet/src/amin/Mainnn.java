@@ -9,27 +9,27 @@ public class Mainnn {
 		//Saisir de l'Etudiant
 		System.out.println("Saisir de l'Etudiant");
 		System.out.println("Saisir le id");
-		int a = sc.nextInt();
+		int idEt = sc.nextInt();
 		System.out.println("Saisir le nom");
-		String b = sc.next();
+		String nomEt = sc.next();
 		System.out.println("Saisir le Prenom");
-		String c = sc.next();
+		String prenomEt = sc.next();
 		System.out.println("Saisir l'adresse");
-		String d = sc.next();
+		String adresseEt = sc.next();
 		System.out.println("Saisir l'email");
-		String e = sc.next();
+		String emailEt = sc.next();
 		
-		Etudiant et = new Etudiant(a,b,c,d,e);
+		Etudiant et = new Etudiant(idEt,nomEt,prenomEt,adresseEt,emailEt);
 		
 		//Saisir de Matiere"
 		System.out.println("Saisir la Matiere");
 		System.out.println("Saisir id de matiere");
-		int id = sc.nextInt();
+		int idMa = sc.nextInt();
 		System.out.println("Saisir nom de matiere");
-		String nom = sc.next();
+		String nomMa = sc.next();
 		System.out.println("Saisir nom de coefficient");
-		String co = sc.next();
-		Matiere ma = new Matiere(id,nom,co);
+		String coefficientMa = sc.next();
+		Matiere ma = new Matiere(idMa,nomMa,coefficientMa);
 		
 		
 		//creation de la matiere et etudiant
@@ -42,10 +42,10 @@ public class Mainnn {
 		no.setId_matière(ma);
 		System.out.println("Saisir le note 1");
 		float note1 = sc.nextFloat();
-		no.setMoyen_Semestre1(note1);
+		no.setNote1(note1);
 		System.out.println("Saisir le note 2");
 		float note2 = sc.nextFloat();
-		no.setMoyen_Semestre2(note2);
+		no.setNote2(note2);
 		
 		
 		Calculer(no , et , ma );
@@ -56,22 +56,22 @@ public class Mainnn {
 	public static void Calculer(Note no, Etudiant et , Matiere ma) {
 		
 		float moyen = 0 , somme = 0; 
-		float note1 = no.getMoyen_Semestre1();
-		float note2 = no.getMoyen_Semestre2();
+		float note1 = no.getNote1();
+		float note2 = no.getNote2();
 		somme = note1 + note2 ; 
 		moyen = somme/2;
 		if(moyen>=10) {
 			no.setResultat_Annee(moyen);
-			no.setAdmin("Admis");
+			no.setAdmis("Admis");
 		}
 		else {
 			no.setResultat_Annee(moyen);
-			no.setAdmin("Ajournée");
+			no.setAdmis("Ajournée");
 		}
 		System.out.println("------------------Affichage-----------------------------");
-		System.out.println("l'etudiant : "+et.getNom()+et.getPrenom()+"\nId matiere : "+ma.getNom()+"\nnote1 : "+no.getMoyen_Semestre1()+
-				"\nnote2 : "+no.getMoyen_Semestre2()+"\nMoyen general :"+no.getResultat_Annee()+
-				"\nResultat Année :"+no.getAdmin());
+		System.out.println("l'etudiant : "+et.getNom()+et.getPrenom()+"\nId matiere : "+ma.getNom()+"\nnote1 : "+no.getNote1()+
+				"\nnote2 : "+no.getNote2()+"\nMoyen general :"+no.getResultat_Annee()+
+				"\nResultat Année :"+no.getAdmis());
 
 	}
 
