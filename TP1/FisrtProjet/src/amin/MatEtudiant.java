@@ -9,12 +9,18 @@ public class MatEtudiant {
 	public Etudiant b ;
 	
 	
-	
+	/**
+	 * Constructeur à deux parametres
+	 * @param a
+	 * @param b
+	 */
 	public MatEtudiant(Matiere a, Etudiant b) {
 		this.a = a;
 		this.b = b;
 	}
-	
+	/**
+	 * cnostructeur par defaut
+	 */
 	public MatEtudiant() {
 		
 	}
