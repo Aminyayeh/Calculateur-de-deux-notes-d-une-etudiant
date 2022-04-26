@@ -1,5 +1,9 @@
 package amin;
-
+/**
+ * 
+ * @author mahdi maher hassan
+ *
+ */
 public class MatEtudiant {
 	public Matiere a ;
 	public Etudiant b ;
