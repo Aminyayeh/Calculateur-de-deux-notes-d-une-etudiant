@@ -1,9 +1,13 @@
 package amin;
 
 import java.util.Scanner;
-
+/**
+ * 
+ * @author Amin Yayeh
+ *
+ */
 public class Mainnn {
-
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		//Saisir de l'Etudiant
@@ -35,21 +39,33 @@ public class Mainnn {
 		//creation de la matiere et etudiant
 		MatEtudiant me = new MatEtudiant(ma,et);
 		
-		//Saisir le note
-		System.out.println("Saisir la note");
+		//Amélioration de fonction Saisir
+		
+
+	
+		Note a = new Note();
+		FonctionSaisir(a,ma);
+		
+		Calculer(a , et , ma );
+		
+		
+	}
+	//Amélioration de fonction Saisir
+	public static void FonctionSaisir(Note n , Matiere m)	{
+		Scanner sc1 = new Scanner(System.in);
+		System.out.println("Saisir la note d'un etudiant");
+		
 		Note no = new Note();
 		
-		no.setId_matière(ma);
+		n.setId_matière(m);
+		
 		System.out.println("Saisir le note 1");
-		float note1 = sc.nextFloat();
-		no.setNote1(note1);
+		float note1 = sc1.nextFloat();
+		n.setNote1(note1);
+		
 		System.out.println("Saisir le note 2");
-		float note2 = sc.nextFloat();
-		no.setNote2(note2);
-		
-		
-		Calculer(no , et , ma );
-		
+		float note2 = sc1.nextFloat();
+		n.setNote2(note2);
 		
 	}
 	

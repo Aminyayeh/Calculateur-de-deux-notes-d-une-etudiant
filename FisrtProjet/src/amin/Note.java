@@ -1,5 +1,11 @@
 package amin;
 
+/**
+ * 
+ * @author Amin Yayeh
+ *
+ */
+
 public class Note {
 	private Matiere Id_matière ;
 	private float note1;

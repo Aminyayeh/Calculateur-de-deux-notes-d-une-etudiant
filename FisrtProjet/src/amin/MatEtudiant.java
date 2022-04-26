@@ -1,5 +1,9 @@
 package amin;
-
+/**
+ * 
+ * @author Amin Yayeh
+ *
+ */
 public class MatEtudiant {
 	public Matiere a ;
 	public Etudiant b ;

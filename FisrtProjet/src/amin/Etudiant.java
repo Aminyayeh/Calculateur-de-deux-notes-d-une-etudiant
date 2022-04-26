@@ -1,9 +1,10 @@
 package amin;
 
-/*
- * first
+/**
  * 
- * */
+ * @author Amin Yayeh
+ *
+ */
 
 public class Etudiant {
 	
@@ -45,7 +46,7 @@ public class Etudiant {
 	}
 	
 	public Etudiant(int id, String nom, String prenom, String adresse, String email) {
-		super();
+		
 		Id = id;
 		Nom = nom;
 		Prenom = prenom;
