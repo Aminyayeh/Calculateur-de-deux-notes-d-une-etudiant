@@ -3,7 +3,9 @@ package amin;
 import java.util.Scanner;
 
 public class Mainnn {
-
+/**
+ * Author Ibrahim
+ */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		//Saisir de l'Etudiant
@@ -61,18 +63,13 @@ public class Mainnn {
 		somme = note1 + note2 ; 
 		moyen = somme/2;
 		if(moyen>=10) {
-			no.setResultat_Annee(moyen);
-			no.setAdmis("Admis");
+			System.out.println("Vous ete Admin");
 		}
 		else {
-			no.setResultat_Annee(moyen);
-			no.setAdmis("Ajournée");
+			
+			System.out.println("Vous ete pas Admin");
 		}
-		System.out.println("------------------Affichage-----------------------------");
-		System.out.println("l'etudiant : "+et.getNom()+et.getPrenom()+"\nId matiere : "+ma.getNom()+"\nnote1 : "+no.getNote1()+
-				"\nnote2 : "+no.getNote2()+"\nMoyen general :"+no.getResultat_Annee()+
-				"\nResultat Année :"+no.getAdmis());
-
+	
 	}
 
 }
