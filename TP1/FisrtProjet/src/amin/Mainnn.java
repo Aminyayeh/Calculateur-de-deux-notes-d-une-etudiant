@@ -3,7 +3,9 @@ package amin;
 import java.util.Scanner;
 
 public class Mainnn {
-
+/**
+ * Author Ibrahim
+ */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		//Saisir de l'Etudiant
