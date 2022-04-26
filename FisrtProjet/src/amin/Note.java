@@ -1,11 +1,11 @@
 package amin;
 
 public class Note {
-	public Matiere Id_matière ;
-	public float note1;
-	public float note2 ;
-	public float moyen ;
-	public String admis ;
+	private Matiere Id_matière ;
+	private float note1;
+	private float note2 ;
+	private float moyen ;
+	private String admis ;
 	
 	public Note(Matiere id_matière, float moyen_Semestre1, float moyen_Semestre2, float resultat_Année, String admin) {
 		
@@ -28,19 +28,19 @@ public class Note {
 		Id_matière = id_matière;
 	}
 
-	public float getMoyen_Semestre1() {
+	public float getNote1() {
 		return note1;
 	}
 
-	public void setMoyen_Semestre1(float moyen_Semestre1) {
+	public void setNote1(float moyen_Semestre1) {
 		note1 = moyen_Semestre1;
 	}
 
-	public float getMoyen_Semestre2() {
+	public float getNote2() {
 		return note2;
 	}
 
-	public void setMoyen_Semestre2(float moyen_Semestre2) {
+	public void setNote2(float moyen_Semestre2) {
 		note2 = moyen_Semestre2;
 	}
 
@@ -52,11 +52,11 @@ public class Note {
 		moyen = resultat_Annee;
 	}
 
-	public String getAdmin() {
+	public String getAdmis() {
 		return admis;
 	}
 
-	public void setAdmin(String admin) {
+	public void setAdmis(String admin) {
 		this.admis = admin;
 	}
 
