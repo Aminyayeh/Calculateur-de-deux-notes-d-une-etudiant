@@ -71,5 +71,9 @@ public class Mainnn {
 		}
 	
 	}
+	
+	public float calculerMoyenne(float noteCC, float noteEF) {
+		return (noteCC+noteEF)/2;
+	}
 
 }
