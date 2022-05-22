@@ -74,5 +74,10 @@ public class Mainnn {
 				"\nResultat Année :"+no.getAdmis());
 
 	}
+	
+	//fonction de deliberation
+	public static void deliberer(Etudiant e, float moyenne) {
+		
+	}
 
 }
